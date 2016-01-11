@@ -1,0 +1,14 @@
+PODS:
+  - NKJModalSelector (0.1.0)
+
+DEPENDENCIES:
+  - NKJModalSelector (from `.`)
+
+EXTERNAL SOURCES:
+  NKJModalSelector:
+    :path: "."
+
+SPEC CHECKSUMS:
+  NKJModalSelector: 600d720c25265058847c0ac42217c7b19266b5ab
+
+COCOAPODS: 0.39.0

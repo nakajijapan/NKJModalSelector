@@ -7,7 +7,7 @@
 //
 
 #import "NKJModalTableViewController.h"
-#import <NKJModalSelector.h>
+#import "NKJModalSelector.h"
 
 @interface NKJModalTableViewController () <NKJModalSelectorNavigationControllerDelegate>
 @end

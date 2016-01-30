@@ -114,7 +114,7 @@
                                  inMax:[UIScreen mainScreen].bounds.size.height
                                 outMin:0.9f
                                 outMax:1.f];
-    NSLog(@"transitionBackgroundViewFromOverlayView scale: %f", scale);
+
     CATransform3D transform = CATransform3DMakeScale(scale, scale, 1.f);
     [screenShotView.layer removeAllAnimations];
     screenShotView.layer.transform = transform;

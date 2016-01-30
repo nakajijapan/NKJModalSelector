@@ -1,7 +1,8 @@
 language: objective-c
 
 before_install:
-#- gem install cocoapods
+- gem install cocoapods
+- gem update cocoapods
 - pod install
 
 script:

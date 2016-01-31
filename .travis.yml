@@ -7,5 +7,5 @@ before_install:
 - pod install
 
 script:
-- set -o pipefail &&  xcodebuild -workspace NKJModalSelector-Demo.xcworkspace -scheme NKJModalSelector-Demo -destination 'platform=iOS Simulator,name=iPhone 6s Plus' -configuration Debug clean build TEST_AFTER_BUILD=YES | xcpretty
+- set -o pipefail &&  xcodebuild -workspace NKJModalSelector-Demo.xcworkspace -scheme NKJModalSelector-Demo -destination 'platform=iOS Simulator,name=iPhone 6' -configuration Debug clean build TEST_AFTER_BUILD=YES | xcpretty
 - pod lib lint

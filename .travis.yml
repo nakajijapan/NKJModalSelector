@@ -2,8 +2,8 @@ language: objective-c
 
 before_install:
 - gem install activesupport
-- gem install cocoapods
-- gem update cocoapods
+- gem install cocoapods -r
+- pod setup
 - pod install
 
 script:

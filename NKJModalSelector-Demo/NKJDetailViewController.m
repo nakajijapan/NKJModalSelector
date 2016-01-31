@@ -7,7 +7,7 @@
 //
 
 #import "NKJDetailViewController.h"
-#import <NKJModalSelector.h>
+#import "NKJModalSelector.h"
 
 @interface NKJDetailViewController ()
 

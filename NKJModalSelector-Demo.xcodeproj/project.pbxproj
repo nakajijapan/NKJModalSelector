@@ -8,10 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		98F3AF5609DA45A7DB188268 /* Pods_NKJModalSelector_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C4A097E5F1333B5638CD6A9 /* Pods_NKJModalSelector_Demo.framework */; };
-		C3AB95E22985D201D32771A8 /* libPods-NKJModalSelector-DemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E1B64736E6ED21EACCCA8680 /* libPods-NKJModalSelector-DemoTests.a */; };
+		B748B9D5301541ADFEE572C1 /* Pods_NKJModalSelector_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EE5EB2944F9A73BF2BFE881 /* Pods_NKJModalSelector_DemoUITests.framework */; };
 		DC3DA9561C440B3E004531BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3DA9551C440B3E004531BC /* main.m */; };
 		DC3DA9611C440B3E004531BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3DA9601C440B3E004531BC /* Assets.xcassets */; };
-		DC3DA96F1C440B3E004531BC /* NKJModalSelector_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3DA96E1C440B3E004531BC /* NKJModalSelector_DemoTests.m */; };
 		DC3DA9811C440C7D004531BC /* NKJDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3DA97A1C440C7D004531BC /* NKJDetailViewController.m */; };
 		DC3DA9821C440C7D004531BC /* NKJModalSelector-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DC3DA97B1C440C7D004531BC /* NKJModalSelector-Info.plist */; };
 		DC3DA9831C440C7D004531BC /* NKJModalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3DA97E1C440C7D004531BC /* NKJModalTableViewController.m */; };
@@ -19,10 +18,11 @@
 		DC3DA9871C440DED004531BC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3DA9851C440DED004531BC /* Launch Screen.storyboard */; };
 		DC3DA9881C440DED004531BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3DA9861C440DED004531BC /* Main.storyboard */; };
 		DC3DA98B1C440E07004531BC /* NKJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3DA98A1C440E07004531BC /* NKJAppDelegate.m */; };
+		DC54325E1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54325D1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DC3DA96B1C440B3E004531BC /* PBXContainerItemProxy */ = {
+		DC5432601C621C6300612AE3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DC3DA9491C440B3E004531BC /* Project object */;
 			proxyType = 1;
@@ -33,15 +33,15 @@
 
 /* Begin PBXFileReference section */
 		0CEF6E438EFF847C829C99CC /* Pods-NKJModalSelector-DemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-DemoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-DemoTests/Pods-NKJModalSelector-DemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		37414DB8BFCAEDE39DE0D79B /* Pods-NKJModalSelector-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-DemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-DemoUITests/Pods-NKJModalSelector-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C4A097E5F1333B5638CD6A9 /* Pods_NKJModalSelector_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKJModalSelector_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE7E9A91A8384C480DC595C /* Pods_NKJModalSelector_DemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKJModalSelector_DemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EE5EB2944F9A73BF2BFE881 /* Pods_NKJModalSelector_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKJModalSelector_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6928C13BDE0130C8A1B3F2A /* Pods-NKJModalSelector-DemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-DemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-DemoTests/Pods-NKJModalSelector-DemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		DC3DA9511C440B3E004531BC /* NKJModalSelector-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NKJModalSelector-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC3DA9551C440B3E004531BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DC3DA9601C440B3E004531BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC3DA9651C440B3E004531BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DC3DA96A1C440B3E004531BC /* NKJModalSelector-DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NKJModalSelector-DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC3DA96E1C440B3E004531BC /* NKJModalSelector_DemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NKJModalSelector_DemoTests.m; sourceTree = "<group>"; };
-		DC3DA9701C440B3E004531BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC3DA9791C440C7D004531BC /* NKJDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKJDetailViewController.h; sourceTree = "<group>"; };
 		DC3DA97A1C440C7D004531BC /* NKJDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKJDetailViewController.m; sourceTree = "<group>"; };
 		DC3DA97B1C440C7D004531BC /* NKJModalSelector-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "NKJModalSelector-Info.plist"; sourceTree = "<group>"; };
@@ -54,9 +54,12 @@
 		DC3DA9861C440DED004531BC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		DC3DA9891C440E07004531BC /* NKJAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKJAppDelegate.h; sourceTree = "<group>"; };
 		DC3DA98A1C440E07004531BC /* NKJAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKJAppDelegate.m; sourceTree = "<group>"; };
+		DC54325B1C621C6300612AE3 /* NKJModalSelector-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NKJModalSelector-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC54325D1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKJModalSelector_DemoUITests.swift; sourceTree = "<group>"; };
+		DC54325F1C621C6300612AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD3E5ED84F5EB2CC6C6E389D /* Pods-NKJModalSelector-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-Demo/Pods-NKJModalSelector-Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		E1B64736E6ED21EACCCA8680 /* libPods-NKJModalSelector-DemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NKJModalSelector-DemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED3D0496E3F0F6769E99BDED /* Pods-NKJModalSelector-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-Demo/Pods-NKJModalSelector-Demo.release.xcconfig"; sourceTree = "<group>"; };
+		F1D36F3BB5F0A92D1C4EAB18 /* Pods-NKJModalSelector-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-DemoUITests/Pods-NKJModalSelector-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +71,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC3DA9671C440B3E004531BC /* Frameworks */ = {
+		DC5432581C621C6300612AE3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3AB95E22985D201D32771A8 /* libPods-NKJModalSelector-DemoTests.a in Frameworks */,
+				B748B9D5301541ADFEE572C1 /* Pods_NKJModalSelector_DemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +85,9 @@
 		297E42A64A4716F356D19AA6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E1B64736E6ED21EACCCA8680 /* libPods-NKJModalSelector-DemoTests.a */,
 				6C4A097E5F1333B5638CD6A9 /* Pods_NKJModalSelector_Demo.framework */,
+				7DE7E9A91A8384C480DC595C /* Pods_NKJModalSelector_DemoTests.framework */,
+				8EE5EB2944F9A73BF2BFE881 /* Pods_NKJModalSelector_DemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +99,8 @@
 				ED3D0496E3F0F6769E99BDED /* Pods-NKJModalSelector-Demo.release.xcconfig */,
 				0CEF6E438EFF847C829C99CC /* Pods-NKJModalSelector-DemoTests.debug.xcconfig */,
 				C6928C13BDE0130C8A1B3F2A /* Pods-NKJModalSelector-DemoTests.release.xcconfig */,
+				37414DB8BFCAEDE39DE0D79B /* Pods-NKJModalSelector-DemoUITests.debug.xcconfig */,
+				F1D36F3BB5F0A92D1C4EAB18 /* Pods-NKJModalSelector-DemoUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -103,7 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				DC3DA9531C440B3E004531BC /* NKJModalSelector-Demo */,
-				DC3DA96D1C440B3E004531BC /* NKJModalSelector-DemoTests */,
+				DC54325C1C621C6300612AE3 /* NKJModalSelector-DemoUITests */,
 				DC3DA9521C440B3E004531BC /* Products */,
 				4A386B579F90B3739F9732B8 /* Pods */,
 				297E42A64A4716F356D19AA6 /* Frameworks */,
@@ -114,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				DC3DA9511C440B3E004531BC /* NKJModalSelector-Demo.app */,
-				DC3DA96A1C440B3E004531BC /* NKJModalSelector-DemoTests.xctest */,
+				DC54325B1C621C6300612AE3 /* NKJModalSelector-DemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,6 +128,8 @@
 		DC3DA9531C440B3E004531BC /* NKJModalSelector-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				DC3DA97B1C440C7D004531BC /* NKJModalSelector-Info.plist */,
+				DC3DA97C1C440C7D004531BC /* NKJModalSelector-Prefix.pch */,
 				DC3DA9891C440E07004531BC /* NKJAppDelegate.h */,
 				DC3DA98A1C440E07004531BC /* NKJAppDelegate.m */,
 				DC3DA9601C440B3E004531BC /* Assets.xcassets */,
@@ -130,8 +138,6 @@
 				DC3DA9651C440B3E004531BC /* Info.plist */,
 				DC3DA9791C440C7D004531BC /* NKJDetailViewController.h */,
 				DC3DA97A1C440C7D004531BC /* NKJDetailViewController.m */,
-				DC3DA97B1C440C7D004531BC /* NKJModalSelector-Info.plist */,
-				DC3DA97C1C440C7D004531BC /* NKJModalSelector-Prefix.pch */,
 				DC3DA97D1C440C7D004531BC /* NKJModalTableViewController.h */,
 				DC3DA97E1C440C7D004531BC /* NKJModalTableViewController.m */,
 				DC3DA97F1C440C7D004531BC /* NKJViewController.h */,
@@ -149,13 +155,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DC3DA96D1C440B3E004531BC /* NKJModalSelector-DemoTests */ = {
+		DC54325C1C621C6300612AE3 /* NKJModalSelector-DemoUITests */ = {
 			isa = PBXGroup;
 			children = (
-				DC3DA96E1C440B3E004531BC /* NKJModalSelector_DemoTests.m */,
-				DC3DA9701C440B3E004531BC /* Info.plist */,
+				DC54325D1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift */,
+				DC54325F1C621C6300612AE3 /* Info.plist */,
 			);
-			path = "NKJModalSelector-DemoTests";
+			path = "NKJModalSelector-DemoUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,26 +187,25 @@
 			productReference = DC3DA9511C440B3E004531BC /* NKJModalSelector-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DC3DA9691C440B3E004531BC /* NKJModalSelector-DemoTests */ = {
+		DC54325A1C621C6300612AE3 /* NKJModalSelector-DemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DC3DA9761C440B3E004531BC /* Build configuration list for PBXNativeTarget "NKJModalSelector-DemoTests" */;
+			buildConfigurationList = DC5432621C621C6300612AE3 /* Build configuration list for PBXNativeTarget "NKJModalSelector-DemoUITests" */;
 			buildPhases = (
-				38D9C9C6406ED3E766999411 /* Check Pods Manifest.lock */,
-				DC3DA9661C440B3E004531BC /* Sources */,
-				DC3DA9671C440B3E004531BC /* Frameworks */,
-				DC3DA9681C440B3E004531BC /* Resources */,
-				6AC5E4476450979A5962F370 /* Embed Pods Frameworks */,
-				5E4206AD305AA40AAFBB3D2B /* Copy Pods Resources */,
+				A7BC94FA6E0B9E7AC4954501 /* Check Pods Manifest.lock */,
+				DC5432571C621C6300612AE3 /* Sources */,
+				DC5432581C621C6300612AE3 /* Frameworks */,
+				DC5432591C621C6300612AE3 /* Resources */,
+				F61DB946E9E700104947CCB0 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DC3DA96C1C440B3E004531BC /* PBXTargetDependency */,
+				DC5432611C621C6300612AE3 /* PBXTargetDependency */,
 			);
-			name = "NKJModalSelector-DemoTests";
-			productName = "NKJModalSelector-DemoTests";
-			productReference = DC3DA96A1C440B3E004531BC /* NKJModalSelector-DemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = "NKJModalSelector-DemoUITests";
+			productName = "NKJModalSelector-DemoUITests";
+			productReference = DC54325B1C621C6300612AE3 /* NKJModalSelector-DemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -208,13 +213,14 @@
 		DC3DA9491C440B3E004531BC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = nakajijapan;
 				TargetAttributes = {
 					DC3DA9501C440B3E004531BC = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					DC3DA9691C440B3E004531BC = {
+					DC54325A1C621C6300612AE3 = {
 						CreatedOnToolsVersion = 7.2;
 						TestTargetID = DC3DA9501C440B3E004531BC;
 					};
@@ -234,7 +240,7 @@
 			projectRoot = "";
 			targets = (
 				DC3DA9501C440B3E004531BC /* NKJModalSelector-Demo */,
-				DC3DA9691C440B3E004531BC /* NKJModalSelector-DemoTests */,
+				DC54325A1C621C6300612AE3 /* NKJModalSelector-DemoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -251,7 +257,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC3DA9681C440B3E004531BC /* Resources */ = {
+		DC5432591C621C6300612AE3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -261,21 +267,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		38D9C9C6406ED3E766999411 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
 		3E11EA99F1913C5034020E8D /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -291,36 +282,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		5E4206AD305AA40AAFBB3D2B /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKJModalSelector-DemoTests/Pods-NKJModalSelector-DemoTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6AC5E4476450979A5962F370 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKJModalSelector-DemoTests/Pods-NKJModalSelector-DemoTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A2624111B54D88DC163C97AB /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -334,6 +295,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKJModalSelector-Demo/Pods-NKJModalSelector-Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7BC94FA6E0B9E7AC4954501 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F61DB946E9E700104947CCB0 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKJModalSelector-DemoUITests/Pods-NKJModalSelector-DemoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F751631A17185F21871D2D0C /* Copy Pods Resources */ = {
@@ -366,21 +357,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DC3DA9661C440B3E004531BC /* Sources */ = {
+		DC5432571C621C6300612AE3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC3DA96F1C440B3E004531BC /* NKJModalSelector_DemoTests.m in Sources */,
+				DC54325E1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DC3DA96C1C440B3E004531BC /* PBXTargetDependency */ = {
+		DC5432611C621C6300612AE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = DC3DA9501C440B3E004531BC /* NKJModalSelector-Demo */;
-			targetProxy = DC3DA96B1C440B3E004531BC /* PBXContainerItemProxy */;
+			targetProxy = DC5432601C621C6300612AE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -493,29 +484,30 @@
 			};
 			name = Release;
 		};
-		DC3DA9771C440B3E004531BC /* Debug */ = {
+		DC5432631C621C6300612AE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CEF6E438EFF847C829C99CC /* Pods-NKJModalSelector-DemoTests.debug.xcconfig */;
+			baseConfigurationReference = 37414DB8BFCAEDE39DE0D79B /* Pods-NKJModalSelector-DemoUITests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "NKJModalSelector-DemoTests/Info.plist";
+				INFOPLIST_FILE = "NKJModalSelector-DemoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.nakajijapan.NKJModalSelector-DemoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.nakajijapan.NKJModalSelector-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NKJModalSelector-Demo.app/NKJModalSelector-Demo";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_TARGET_NAME = "NKJModalSelector-Demo";
+				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
 		};
-		DC3DA9781C440B3E004531BC /* Release */ = {
+		DC5432641C621C6300612AE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C6928C13BDE0130C8A1B3F2A /* Pods-NKJModalSelector-DemoTests.release.xcconfig */;
+			baseConfigurationReference = F1D36F3BB5F0A92D1C4EAB18 /* Pods-NKJModalSelector-DemoUITests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = "NKJModalSelector-DemoTests/Info.plist";
+				INFOPLIST_FILE = "NKJModalSelector-DemoUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "net.nakajijapan.NKJModalSelector-DemoTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.nakajijapan.NKJModalSelector-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NKJModalSelector-Demo.app/NKJModalSelector-Demo";
+				TEST_TARGET_NAME = "NKJModalSelector-Demo";
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -540,11 +532,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DC3DA9761C440B3E004531BC /* Build configuration list for PBXNativeTarget "NKJModalSelector-DemoTests" */ = {
+		DC5432621C621C6300612AE3 /* Build configuration list for PBXNativeTarget "NKJModalSelector-DemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DC3DA9771C440B3E004531BC /* Debug */,
-				DC3DA9781C440B3E004531BC /* Release */,
+				DC5432631C621C6300612AE3 /* Debug */,
+				DC5432641C621C6300612AE3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

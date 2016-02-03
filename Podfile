@@ -5,6 +5,6 @@ target 'NKJModalSelector-Demo', :exclusive => true do
   pod "NKJModalSelector", :path => "."
 end
 
-#target 'NKJModalSelector-DemoTests', :exclusive => true do
-#  pod "NKJModalSelector", :path => "./"
-#end
+target 'NKJModalSelector-DemoUITests', :exclusive => true do
+  pod "NKJModalSelector", :path => "."
+end

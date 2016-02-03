@@ -38,6 +38,16 @@
                ReferencedContainer = "container:NKJModalSelector-Demo.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "DC54325A1C621C6300612AE3"
+               BuildableName = "NKJModalSelector-DemoUITests.xctest"
+               BlueprintName = "NKJModalSelector-DemoUITests"
+               ReferencedContainer = "container:NKJModalSelector-Demo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

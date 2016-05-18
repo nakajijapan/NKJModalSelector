@@ -1,10 +1,14 @@
 source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+
+project 'NKJModalSelector-Demo'
 use_frameworks!
 
-target 'NKJModalSelector-Demo', :exclusive => true do
+target 'NKJModalSelector-Demo' do
   pod "NKJModalSelector", :path => "."
 end
 
-target 'NKJModalSelector-DemoUITests', :exclusive => true do
+target 'NKJModalSelector-DemoUITests' do
   pod "NKJModalSelector", :path => "."
 end

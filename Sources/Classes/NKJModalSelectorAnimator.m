@@ -25,7 +25,7 @@
     toView.tag = NKJModalSelectorInternalViewTypeToView;
     [fromView addSubview:toView];
     
-    [UIView animateWithDuration:0.2f
+    [UIView animateWithDuration:0.2
                      animations:^{
 
                          CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
@@ -66,7 +66,7 @@
     UIView *overlayView = [NKJModalSelectorAnimator overlayViewFromView:fromView];
     overlayView.alpha = 1.f;
 
-    [UIView animateWithDuration:0.2f
+    [UIView animateWithDuration:0.2
                      animations:^{
                          
                          
@@ -91,8 +91,8 @@
         UIImageView *screenShotView = (UIImageView *)overlayView.subviews[0];
         [screenShotView.layer addAnimation:[self animationGroupWithForward:NO] forKey:@"bringForwardAnimation"];
         
-        [UIView animateWithDuration:0.3f
-                              delay:0.f
+        [UIView animateWithDuration:0.3
+                              delay:0.0
                             options:UIViewAnimationOptionCurveEaseOut
                          animations:^{
                              
@@ -146,7 +146,7 @@
     [screenshotContainer addSubview:screenshot];
     
     [screenshot.layer addAnimation:[self animationGroupWithForward:YES] forKey:@"pushedBackAnimation"];
-    [UIView animateWithDuration:0.2f
+    [UIView animateWithDuration:0.2
                      animations:^{
                          screenshot.alpha = 0.5f;
                      }];

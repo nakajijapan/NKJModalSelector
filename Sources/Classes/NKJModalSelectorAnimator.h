@@ -11,7 +11,6 @@
 
 @interface NKJModalSelectorAnimator : NSObject
 
-
 + (void)presentToView:(UIView *)toView fromView:(UIView *)fromView completion:(void (^)(void))completion;
 + (UIView *)overlayViewFromView:(UIView *)view;
 + (UIView *)modalViewFromView:(UIView *)view;

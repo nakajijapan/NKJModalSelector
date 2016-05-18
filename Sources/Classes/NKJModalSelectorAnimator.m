@@ -24,7 +24,7 @@
     toView.frame = CGRectOffset(fromView.bounds, 0.f, fromView.bounds.size.height);
     toView.tag = NKJModalSelectorInternalViewTypeToView;
     [fromView addSubview:toView];
-    
+
     [UIView animateWithDuration:0.2
                      animations:^{
 
@@ -110,6 +110,9 @@
 
 + (void)transitionBackgroundViewFromOverlayView:(UIView *)overlayView location:(CGPoint)location;
 {
+    if (![NKJModalSelector appearance].shouldTransformScaleDown) {
+        return;
+    }
 
     UIImageView *screenShotView = [NKJModalSelectorAnimator screenShotViewFromOverLayView:overlayView];
     CGFloat scale = [self mapWithValue:location.y
@@ -155,7 +158,12 @@
 + (CAAnimationGroup *)animationGroupWithForward:(BOOL)forward
 {
     CATransform3D transform = CATransform3DIdentity;
-    transform = CATransform3DScale(transform, 0.95f, 0.95f, 1.f);
+    
+    if ([NKJModalSelector appearance].shouldTransformScaleDown) {
+        transform = CATransform3DScale(transform, 0.95f, 0.95f, 1.f);
+    } else {
+        transform = CATransform3DScale(transform, 1.f, 1.f, 1.f);
+    }
 
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
     if (forward) {

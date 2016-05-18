@@ -6,8 +6,6 @@
 //
 //
 
-#ifndef NKJModalSelector_h
-#define NKJModalSelector_h
 
 typedef enum :NSInteger {
     NKJModalSelectorInternalViewTypeToView = 900,
@@ -19,4 +17,7 @@ typedef enum :NSInteger {
 #import "NKJModalSelectorNavigationController.h"
 #import "UINavigationController+NKJModalSelector.h"
 
-#endif /* NKJModalSelector_h */
+@interface NKJModalSelector : NSObject
++ (instancetype)appearance;
+@property (nonatomic) BOOL shouldTransformScaleDown;
+@end

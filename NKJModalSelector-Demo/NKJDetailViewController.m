@@ -17,13 +17,13 @@
 
 - (IBAction)buttonDidTap:(id)sender {
     
+    [NKJModalSelector appearance].shouldTransformScaleDown = YES;
     NKJModalSelectorNavigationController *modalNavigationViewController = (NKJModalSelectorNavigationController *)[self.storyboard instantiateViewControllerWithIdentifier:@"NKJModalSelectorNavigationController"];
     
     modalNavigationViewController.parentNavigationController = self.navigationController;
     
     [self.navigationController addChildViewController:modalNavigationViewController];
     [self.navigationController si_presentViewControllerToViewController:modalNavigationViewController];
-    
     
 }
 

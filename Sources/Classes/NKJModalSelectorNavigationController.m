@@ -59,7 +59,7 @@
 
 
                 gestureRecognizer.enabled = NO;
-                [UIView animateWithDuration:0.2f
+                [UIView animateWithDuration:0.2
                                  animations:^{
                                     
                                      CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
@@ -74,8 +74,8 @@
                                      
                                  } completion:^(BOOL finished) {
                                      
-                                     [UIView animateWithDuration:0.1f
-                                                           delay:0.f
+                                     [UIView animateWithDuration:0.1
+                                                           delay:0.0
                                                          options:UIViewAnimationOptionCurveLinear
                                                       animations:^{
                                                           backgroundView.alpha = 0.f;
@@ -93,8 +93,8 @@
                 
             } else {
                 
-                [UIView animateWithDuration:0.6f
-                                      delay:0.f
+                [UIView animateWithDuration:0.6
+                                      delay:0.0
                      usingSpringWithDamping:0.5f
                       initialSpringVelocity:0.1f
                                     options:UIViewAnimationOptionCurveLinear

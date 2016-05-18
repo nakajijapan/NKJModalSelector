@@ -25,11 +25,13 @@
     toView.tag = NKJModalSelectorInternalViewTypeToView;
     [fromView addSubview:toView];
     
-    [UIView animateWithDuration:0.3f
+    [UIView animateWithDuration:0.2
                      animations:^{
+
                          CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
                          toView.frame = CGRectOffset(fromView.bounds, 0.f, statusBarHeight + fromView.bounds.size.height / 2.0);
                          toView.alpha = 1.f;
+
                      }
                      completion:^(BOOL finished) {
                          
@@ -63,9 +65,10 @@
     UIView *modalView = [NKJModalSelectorAnimator modalViewFromView:fromView];
     UIView *overlayView = [NKJModalSelectorAnimator overlayViewFromView:fromView];
     overlayView.alpha = 1.f;
-    
-    [UIView animateWithDuration:0.5f
+
+    [UIView animateWithDuration:0.2
                      animations:^{
+                         
                          
                          modalView.frame = CGRectMake(
                                                       (targetView.bounds.size.width - modalView.frame.size.width) / 2.f,
@@ -75,7 +78,7 @@
                          
                      }
                      completion:^(BOOL finished) {
-                         
+
                          [overlayView removeFromSuperview];
                          [modalView removeFromSuperview];
                          
@@ -88,8 +91,8 @@
         UIImageView *screenShotView = (UIImageView *)overlayView.subviews[0];
         [screenShotView.layer addAnimation:[self animationGroupWithForward:NO] forKey:@"bringForwardAnimation"];
         
-        [UIView animateWithDuration:0.6f
-                              delay:0.f
+        [UIView animateWithDuration:0.3
+                              delay:0.0
                             options:UIViewAnimationOptionCurveEaseOut
                          animations:^{
                              
@@ -143,7 +146,7 @@
     [screenshotContainer addSubview:screenshot];
     
     [screenshot.layer addAnimation:[self animationGroupWithForward:YES] forKey:@"pushedBackAnimation"];
-    [UIView animateWithDuration:0.3f
+    [UIView animateWithDuration:0.2
                      animations:^{
                          screenshot.alpha = 0.5f;
                      }];
@@ -161,8 +164,7 @@
         animation.toValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
     }
     
-    CFTimeInterval duration = 1.f;
-    animation.duration = duration / 3.f;
+    animation.duration = 0.2;
     animation.fillMode = kCAFillModeForwards;
     animation.removedOnCompletion = NO;
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];

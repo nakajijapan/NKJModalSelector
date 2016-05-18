@@ -40,10 +40,11 @@
     [NKJModalSelectorAnimator dissmissFromView:[self parentTagetView]
                       presentingViewController:self.visibleViewController
                                     completion:^{
-                                        
+
                                         if (completion) {
                                             completion();
                                         }
+
                                     }];
 }
 
@@ -54,9 +55,7 @@
     
     [NKJModalSelectorAnimator dissmissFromView:[self parentTagetView]
                       presentingViewController:[self visibleViewController]
-                                    completion:^{
-                                        // none
-                                    }];
+                                    completion:nil];
 }
 
 

@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		76C1C93A2624A3677256175C /* Pods_NKJModalSelector_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2C6BD5C80ACE2B72A2DAEB2 /* Pods_NKJModalSelector_Demo.framework */; };
+		82E773E2181B1032A1BED2E6 /* Pods_NKJModalSelector_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 575290A6BD0B20398B678BD9 /* Pods_NKJModalSelector_Demo.framework */; };
 		DC3DA9561C440B3E004531BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3DA9551C440B3E004531BC /* main.m */; };
 		DC3DA9611C440B3E004531BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC3DA9601C440B3E004531BC /* Assets.xcassets */; };
 		DC3DA9811C440C7D004531BC /* NKJDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3DA97A1C440C7D004531BC /* NKJDetailViewController.m */; };
@@ -18,7 +18,7 @@
 		DC3DA9881C440DED004531BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3DA9861C440DED004531BC /* Main.storyboard */; };
 		DC3DA98B1C440E07004531BC /* NKJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3DA98A1C440E07004531BC /* NKJAppDelegate.m */; };
 		DC54325E1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54325D1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift */; };
-		E7DC15F0B5CBCC443860DDF7 /* Pods_NKJModalSelector_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AEFEF4DB7182826F413B35 /* Pods_NKJModalSelector_DemoUITests.framework */; };
+		E6CF0FC4CB84B275E813E710 /* Pods_NKJModalSelector_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE7EEDD12B8D840B303FE5D /* Pods_NKJModalSelector_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		46AEFEF4DB7182826F413B35 /* Pods_NKJModalSelector_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKJModalSelector_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		575290A6BD0B20398B678BD9 /* Pods_NKJModalSelector_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKJModalSelector_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B9FF504D04ACC2430AFB06C /* Pods-NKJModalSelector-DemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-DemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-DemoUITests/Pods-NKJModalSelector-DemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9CE7EEDD12B8D840B303FE5D /* Pods_NKJModalSelector_DemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKJModalSelector_DemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB73AEA641D3EA6D224609E /* Pods-NKJModalSelector-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-Demo/Pods-NKJModalSelector-Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		C2C6BD5C80ACE2B72A2DAEB2 /* Pods_NKJModalSelector_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKJModalSelector_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC3BB9F89ED74A502D75558A /* Pods-NKJModalSelector-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-Demo/Pods-NKJModalSelector-Demo.release.xcconfig"; sourceTree = "<group>"; };
 		D49BE7F3B44EBB11931ABEC9 /* Pods-NKJModalSelector-DemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKJModalSelector-DemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NKJModalSelector-DemoUITests/Pods-NKJModalSelector-DemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DC3DA9511C440B3E004531BC /* NKJModalSelector-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NKJModalSelector-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76C1C93A2624A3677256175C /* Pods_NKJModalSelector_Demo.framework in Frameworks */,
+				82E773E2181B1032A1BED2E6 /* Pods_NKJModalSelector_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7DC15F0B5CBCC443860DDF7 /* Pods_NKJModalSelector_DemoUITests.framework in Frameworks */,
+				E6CF0FC4CB84B275E813E710 /* Pods_NKJModalSelector_DemoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,8 +82,8 @@
 		32E86055152CB231E9A544BD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C2C6BD5C80ACE2B72A2DAEB2 /* Pods_NKJModalSelector_Demo.framework */,
-				46AEFEF4DB7182826F413B35 /* Pods_NKJModalSelector_DemoUITests.framework */,
+				575290A6BD0B20398B678BD9 /* Pods_NKJModalSelector_Demo.framework */,
+				9CE7EEDD12B8D840B303FE5D /* Pods_NKJModalSelector_DemoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

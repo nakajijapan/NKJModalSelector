@@ -48,9 +48,6 @@ modalNavigationViewController.parentNavigationController = self.navigationContro
 - Input `NKJModalSelectorNavigationController` in Custom Class for NavigationController.
 
 
-![Shari](https://raw.githubusercontent.com/nakajijapan/Shari/master/shari01.png)
-
-
 ### Closing a window
 
 You can close using the following code in viewController:

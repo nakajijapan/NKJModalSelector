@@ -25,6 +25,45 @@ it, simply add the following line to your Podfile:
 pod "NKJModalSelector"
 ```
 
+## Usage
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+## ViewController
+
+```objc
+[NKJModalSelector appearance].shouldTransformScaleDown = YES;
+
+NKJModalSelectorNavigationController *modalNavigationViewController = (NKJModalSelectorNavigationController *)[self.storyboard instantiateViewControllerWithIdentifier:@"NKJModalSelectorNavigationController"];
+
+modalNavigationViewController.parentNavigationController = self.navigationController;
+
+[self.navigationController addChildViewController:modalNavigationViewController];
+[self.navigationController si_presentViewControllerToViewController:modalNavigationViewController];
+```
+
+## ModalViewController
+
+- Create NavigationController and ViewController in storyboards.
+- Input `NKJModalSelectorNavigationController` in Custom Class for NavigationController.
+
+
+![Shari](https://raw.githubusercontent.com/nakajijapan/Shari/master/shari01.png)
+
+
+### Closing a window
+
+You can close using the following code in viewController:
+
+```objc
+NKJModalSelectorNavigationController *currentNavigationController;
+currentNavigationController = (NKJModalSelectorNavigationController *)self.navigationController;
+[currentNavigationController.parentNavigationController si_dismissModalViewWithComplation:^{
+    // something
+}];
+```
+
+
 ## Author
 
 nakajijapan, pp.kupepo.gattyanmo@gmail.com

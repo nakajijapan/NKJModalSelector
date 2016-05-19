@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "NKJModalSelector"
-  s.version          = "0.2.1"
+  s.version          = "0.2.2"
   s.summary          = "NKJModalSelector is the alternative to the library of UIPickerView(drum roll). Is inspired to Etsy's view controller transition."
   s.homepage         = "https://github.com/nakajijapan/NKJModalSelector"
   s.license          = 'MIT'

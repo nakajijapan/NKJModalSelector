@@ -25,7 +25,7 @@
     toView.tag = NKJModalSelectorInternalViewTypeToView;
     [fromView addSubview:toView];
 
-    [UIView animateWithDuration:0.2
+    [UIView animateWithDuration:0.25
                      animations:^{
 
                          CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;

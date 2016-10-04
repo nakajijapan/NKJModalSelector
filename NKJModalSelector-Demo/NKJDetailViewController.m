@@ -15,6 +15,12 @@
 
 @implementation NKJDetailViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tabBarController.tabBar setHidden:YES];
+}
+
 - (IBAction)buttonDidTap:(id)sender {
     
     [NKJModalSelector appearance].shouldTransformScaleDown = YES;
@@ -26,6 +32,5 @@
     [self.navigationController si_presentViewControllerToViewController:modalNavigationViewController];
     
 }
-
 
 @end

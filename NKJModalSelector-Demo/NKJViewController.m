@@ -12,17 +12,15 @@
 
 @end
 
+
 @implementation NKJViewController
 
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    return 1;
-//}
-//
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"test"];
-//    return cell;
-//}
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tabBarController.tabBar setHidden:NO];
+}
 
 @end

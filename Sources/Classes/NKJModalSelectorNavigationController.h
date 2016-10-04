@@ -16,4 +16,5 @@
 @interface NKJModalSelectorNavigationController : UINavigationController
 @property (nonatomic) id<NKJModalSelectorNavigationControllerDelegate> si_delegate;
 @property (nonatomic) UINavigationController *parentNavigationController;
+@property (nonatomic) UITabBarController *parentTabBarController;
 @end

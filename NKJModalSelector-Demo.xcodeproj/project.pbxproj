@@ -18,6 +18,7 @@
 		DC3DA9881C440DED004531BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC3DA9861C440DED004531BC /* Main.storyboard */; };
 		DC3DA98B1C440E07004531BC /* NKJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DC3DA98A1C440E07004531BC /* NKJAppDelegate.m */; };
 		DC54325E1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC54325D1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift */; };
+		DC75CF161DA2A95000BB68CE /* NKJTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DC75CF151DA2A95000BB68CE /* NKJTabBarViewController.m */; };
 		E6CF0FC4CB84B275E813E710 /* Pods_NKJModalSelector_DemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE7EEDD12B8D840B303FE5D /* Pods_NKJModalSelector_DemoUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,8 @@
 		DC54325B1C621C6300612AE3 /* NKJModalSelector-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "NKJModalSelector-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC54325D1C621C6300612AE3 /* NKJModalSelector_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKJModalSelector_DemoUITests.swift; sourceTree = "<group>"; };
 		DC54325F1C621C6300612AE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC75CF141DA2A95000BB68CE /* NKJTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NKJTabBarViewController.h; sourceTree = "<group>"; };
+		DC75CF151DA2A95000BB68CE /* NKJTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NKJTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				DC3DA97A1C440C7D004531BC /* NKJDetailViewController.m */,
 				DC3DA97D1C440C7D004531BC /* NKJModalTableViewController.h */,
 				DC3DA97E1C440C7D004531BC /* NKJModalTableViewController.m */,
+				DC75CF141DA2A95000BB68CE /* NKJTabBarViewController.h */,
+				DC75CF151DA2A95000BB68CE /* NKJTabBarViewController.m */,
 				DC3DA97F1C440C7D004531BC /* NKJViewController.h */,
 				DC3DA9801C440C7D004531BC /* NKJViewController.m */,
 				DC3DA9541C440B3E004531BC /* Supporting Files */,
@@ -165,12 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC3DA9731C440B3E004531BC /* Build configuration list for PBXNativeTarget "NKJModalSelector-Demo" */;
 			buildPhases = (
-				33ECE161C6EC348C7C45885A /* 📦 Check Pods Manifest.lock */,
+				33ECE161C6EC348C7C45885A /* [CP] Check Pods Manifest.lock */,
 				DC3DA94D1C440B3E004531BC /* Sources */,
 				DC3DA94E1C440B3E004531BC /* Frameworks */,
 				DC3DA94F1C440B3E004531BC /* Resources */,
-				FFAABD34AD124FAEA99E151D /* 📦 Embed Pods Frameworks */,
-				974A7079D168058C79D702FC /* 📦 Copy Pods Resources */,
+				FFAABD34AD124FAEA99E151D /* [CP] Embed Pods Frameworks */,
+				974A7079D168058C79D702FC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -185,11 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC5432621C621C6300612AE3 /* Build configuration list for PBXNativeTarget "NKJModalSelector-DemoUITests" */;
 			buildPhases = (
-				193BCACEDF513D9EBFDE241C /* 📦 Check Pods Manifest.lock */,
+				193BCACEDF513D9EBFDE241C /* [CP] Check Pods Manifest.lock */,
 				DC5432571C621C6300612AE3 /* Sources */,
 				DC5432581C621C6300612AE3 /* Frameworks */,
 				DC5432591C621C6300612AE3 /* Resources */,
-				B2C842BD24901ECAECCEAB68 /* 📦 Copy Pods Resources */,
+				B2C842BD24901ECAECCEAB68 /* [CP] Copy Pods Resources */,
+				BDE65E5E0AB0B61F1954A71B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -217,6 +223,7 @@
 					};
 					DC54325A1C621C6300612AE3 = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0810;
 						TestTargetID = DC3DA9501C440B3E004531BC;
 					};
 				};
@@ -262,44 +269,44 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		193BCACEDF513D9EBFDE241C /* 📦 Check Pods Manifest.lock */ = {
+		193BCACEDF513D9EBFDE241C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		33ECE161C6EC348C7C45885A /* 📦 Check Pods Manifest.lock */ = {
+		33ECE161C6EC348C7C45885A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		974A7079D168058C79D702FC /* 📦 Copy Pods Resources */ = {
+		974A7079D168058C79D702FC /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,14 +314,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKJModalSelector-Demo/Pods-NKJModalSelector-Demo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B2C842BD24901ECAECCEAB68 /* 📦 Copy Pods Resources */ = {
+		B2C842BD24901ECAECCEAB68 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,14 +329,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKJModalSelector-DemoUITests/Pods-NKJModalSelector-DemoUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FFAABD34AD124FAEA99E151D /* 📦 Embed Pods Frameworks */ = {
+		BDE65E5E0AB0B61F1954A71B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "📦 Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKJModalSelector-DemoUITests/Pods-NKJModalSelector-DemoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFAABD34AD124FAEA99E151D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +370,7 @@
 				DC3DA98B1C440E07004531BC /* NKJAppDelegate.m in Sources */,
 				DC3DA9811C440C7D004531BC /* NKJDetailViewController.m in Sources */,
 				DC3DA9831C440C7D004531BC /* NKJModalTableViewController.m in Sources */,
+				DC75CF161DA2A95000BB68CE /* NKJTabBarViewController.m in Sources */,
 				DC3DA9841C440C7D004531BC /* NKJViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +517,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "net.nakajijapan.NKJModalSelector-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "NKJModalSelector-Demo";
 				USES_XCTRUNNER = YES;
 			};
@@ -507,6 +531,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.nakajijapan.NKJModalSelector-DemoUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "NKJModalSelector-Demo";
 				USES_XCTRUNNER = YES;
 			};

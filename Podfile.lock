@@ -1,5 +1,5 @@
 PODS:
-  - NKJModalSelector (0.1.2)
+  - NKJModalSelector (0.2.2)
 
 DEPENDENCIES:
   - NKJModalSelector (from `.`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "."
 
 SPEC CHECKSUMS:
-  NKJModalSelector: a4e48e4121ef210fb4cb84ce16f9a5b5bd350f99
+  NKJModalSelector: 130482304ae327ed4903f95b3d72f825e7e2a8df
 
 PODFILE CHECKSUM: 2177ca6db3b4e720b92414eb0b7312a2201e9f70
 
-COCOAPODS: 1.0.0
+COCOAPODS: 1.1.0.rc.2

@@ -135,9 +135,12 @@
 {
     screenshotContainer.hidden = YES;
     
-    UIGraphicsBeginImageContextWithOptions(capturedView.bounds.size, YES, [UIScreen mainScreen].scale);
-    [capturedView drawViewHierarchyInRect:capturedView.bounds afterScreenUpdates:YES];
+    UIGraphicsBeginImageContextWithOptions(capturedView.bounds.size, NO, [UIScreen mainScreen].scale);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextTranslateCTM(context, -capturedView.bounds.origin.x, -capturedView.bounds.origin.y);
     
+    [capturedView.layer renderInContext:context];
+
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     

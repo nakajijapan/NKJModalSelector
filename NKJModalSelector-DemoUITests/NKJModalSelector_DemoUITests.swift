@@ -45,7 +45,7 @@ class NKJModalSelector_DemoUITests: XCTestCase {
         let app = XCUIApplication()
         app.tables["NKJViewControllerTable"].staticTexts["Detail View Controller"].tap()
         app.buttons["Button"].tap()
-        app.otherElements.containingType(.NavigationBar, identifier:"NKJModalSelectorNavigation").childrenMatchingType(.Other).elementBoundByIndex(1).childrenMatchingType(.Image).element.tap()
+        app.otherElements.containing(.navigationBar, identifier:"NKJModalSelectorNavigation").children(matching: .other).element(boundBy: 1).children(matching: .image).element.tap()
         
     }
     

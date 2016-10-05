@@ -16,6 +16,7 @@ typedef enum :NSInteger {
 #import "NKJModalSelectorAnimator.h"
 #import "NKJModalSelectorNavigationController.h"
 #import "UINavigationController+NKJModalSelector.h"
+#import "UITabBarController+NKJModalSelector.h"
 
 @interface NKJModalSelector : NSObject
 + (instancetype)appearance;

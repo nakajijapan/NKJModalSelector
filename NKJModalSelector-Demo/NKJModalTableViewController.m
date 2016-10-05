@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     NKJModalSelectorNavigationController *navigationController = (NKJModalSelectorNavigationController *)self.navigationController;
     navigationController.si_delegate = self;
     self.tableView.scrollEnabled = NO;
@@ -47,27 +47,45 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NKJModalSelectorNavigationController *currentNavigationController;
-    currentNavigationController = (NKJModalSelectorNavigationController *)self.navigationController;
-    [currentNavigationController.parentNavigationController si_dismissModalViewWithComplation:^{
+    NKJModalSelectorNavigationController *currentController;
+    currentController = (NKJModalSelectorNavigationController *)self.navigationController;
+
+    if (currentController.parentNavigationController) {
+
+        [currentController.parentNavigationController si_dismissModalViewWithComplation:^{
+            NSLog(@"close via cell");
+        }];
+
+    } else {
+
+        [currentController.parentTabBarController si_dismissModalViewWithComplation:^{
+            NSLog(@"close via cell");
+        }];
         
-        NSLog(@"close via cell");
-
-    }];
-
+    }
+    
 }
 
 #pragma mark - Button Actions
 
 - (IBAction)closeButtonDidTap:(id)sender
 {
-    NKJModalSelectorNavigationController *currentNavigationController;
-    currentNavigationController = (NKJModalSelectorNavigationController *)self.navigationController;
-    [currentNavigationController.parentNavigationController si_dismissModalViewWithComplation:^{
-
-        NSLog(@"close via button");
+    NKJModalSelectorNavigationController *currentController;
+    currentController = (NKJModalSelectorNavigationController *)self.navigationController;
+    
+    if (currentController.parentNavigationController) {
         
-    }];
+        [currentController.parentNavigationController si_dismissModalViewWithComplation:^{
+            NSLog(@"close via cell");
+        }];
+        
+    } else {
+        
+        [currentController.parentTabBarController si_dismissModalViewWithComplation:^{
+            NSLog(@"close via cell");
+        }];
+        
+    }
 }
 
 #pragma mark - NKJModalSelectorNavigationControllerDelegate

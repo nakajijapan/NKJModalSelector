@@ -31,7 +31,8 @@
 {
     
     CGPoint location = [gestureRecognizer locationInView:self.parentViewController.view];
-    UIView *backgroundView = [NKJModalSelectorAnimator overlayViewFromView:[self.parentNavigationController parentTagetView]];
+    UIView *backgroundView = [NKJModalSelectorAnimator overlayViewFromView:[self parentTagetView]];
+
     CGFloat degreeY = location.y - self.previousLocation.y;
     __block CGRect frame = self.view.frame;
 
@@ -122,6 +123,26 @@
 
     self.previousLocation = location;
     
+}
+
+
+- (UIView *)parentTagetView
+{
+    if (self.tabBarController != nil) {
+        return [self.tabBarController parentTagetView];
+    }
+    
+    return [self.navigationController parentTagetView];
+    
+}
+
+- (UIViewController *)parentController
+{
+    if (self.tabBarController != nil) {
+        return self.tabBarController;
+    }
+    
+    return self.navigationController;
 }
 
 @end

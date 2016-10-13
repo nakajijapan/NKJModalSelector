@@ -35,10 +35,11 @@
 
 - (void)si_dismissModalViewWithComplation:(void (^)(void))completion
 {
-    [self willMoveToParentViewController:nil];
+    UIViewController *presentingViewController = self.childViewControllers.lastObject;
+    [presentingViewController willMoveToParentViewController:nil];
     
     [NKJModalSelectorAnimator dissmissFromView:[self parentTagetView]
-                      presentingViewController:self
+                      presentingViewController:presentingViewController
                                     completion:^{
                                         
                                         if (completion) {
@@ -50,11 +51,11 @@
 
 - (void)overlayViewDidTap:(UITapGestureRecognizer *)gestureRecognizer
 {
-    
-    [self willMoveToParentViewController:nil];
+    UIViewController *presentingViewController = self.childViewControllers.lastObject;
+    [presentingViewController willMoveToParentViewController:nil];
     
     [NKJModalSelectorAnimator dissmissFromView:[self parentTagetView]
-                      presentingViewController:self
+                      presentingViewController:presentingViewController
                                     completion:nil];
 }
 

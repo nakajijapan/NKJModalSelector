@@ -46,6 +46,9 @@
                                             completion();
                                         }
                                         
+                                        [presentingViewController removeFromParentViewController];
+
+                                        
                                     }];
 }
 
@@ -56,7 +59,11 @@
     
     [NKJModalSelectorAnimator dissmissFromView:[self parentTagetView]
                       presentingViewController:presentingViewController
-                                    completion:nil];
+                                    completion:^{
+
+                                        [presentingViewController removeFromParentViewController];
+
+                                    }];
 }
 
 @end

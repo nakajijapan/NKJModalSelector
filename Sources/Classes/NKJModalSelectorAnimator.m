@@ -82,8 +82,6 @@
                          [overlayView removeFromSuperview];
                          [modalView removeFromSuperview];
                          
-                         [presentingViewController removeFromParentViewController];
-
                      }];
     
     if (overlayView != nil) {
